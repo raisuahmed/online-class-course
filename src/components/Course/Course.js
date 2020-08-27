@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import './Course.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCartPlus, faLevelUpAlt, faStar,  faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
+import {faShoppingCart, faStar,  faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Course = (props) => {
     //console.log("course", typeof (props.data))
@@ -24,17 +24,14 @@ const Course = (props) => {
                                         <div>
                                             <h5>{every.name}</h5>
                                             
-                                            <FontAwesomeIcon icon={faStar} style={{color:'orange'}} />
+                                            <FontAwesomeIcon icon={ faStar} style={{color:'orange'}} />
+                                    <FontAwesomeIcon icon={faStar} style={{color:'orange'}}/>
                                             <FontAwesomeIcon icon={faStar} style={{color:'orange'}}/>
-                                            <FontAwesomeIcon icon={faStar} style={{color:'orange'}}/>
-                                            <FontAwesomeIcon icon={faStar} style={{color:'orange'}}/>
+                                            
                                             <FontAwesomeIcon icon={faStarHalfAlt} style={{color:'orange'}}/>
                                             <span> {every.rating} </span> 
                                             <br/>
-                                            <FontAwesomeIcon icon={faLevelUpAlt} /> 
-                                            <span> {every.level} </span>
-                                            <br/>
-
+                                            
                                             <b>By : {every.by}</b>
                                             <h5>${every.price}</h5>
                                              <span>{every.students}k students</span>

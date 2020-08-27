@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCartPlus, faLevelUpAlt, faStar,  faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
-import './Enrolled.css'
-const Enrolled = (props) => {
+import {faShoppingCart   } from '@fortawesome/free-solid-svg-icons';
+import './shop.css'
+const Shop = (props) => {
     const items = props.data;
     console.log("enrol", typeof(items));
     
     return (
-        <div className="enrolled-container">
+        <div className="shop-container">
             <Container fluid>
                 {/* enrolled item list small view in cart */}
                 {
@@ -22,11 +22,7 @@ const Enrolled = (props) => {
                             <Col sm={6}>
                                 <div>
                                 <b>{every.name}</b> <br/>
-                                <FontAwesomeIcon icon={faStar} style={{color:'orange'}} />
-                                <FontAwesomeIcon icon={faStar} style={{color:'orange'}}/>
-                                <FontAwesomeIcon icon={faStar} style={{color:'orange'}}/>
-                                <FontAwesomeIcon icon={faStar} style={{color:'orange'}}/>
-                                <FontAwesomeIcon icon={faStarHalfAlt} style={{color:'orange'}}/>
+                               
                                 </div>
                             </Col>
                             <Col sm={3}>
@@ -43,4 +39,4 @@ const Enrolled = (props) => {
     );
 };
 
-export default Enrolled;
+export default Shop;

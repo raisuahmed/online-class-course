@@ -1,7 +1,16 @@
 .header{
-    background-color: rgb(128, 64, 246);
-    color: white;
+    background-color: #563d7c;
+    color: rgb(221, 166, 13);
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.select:hover{
+    background-color: purple;
+    border-radius:17px
 }
 .text-color{
-    color:white;
+    color:wheat;
+    
+    
 }
