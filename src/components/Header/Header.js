@@ -1,13 +1,10 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 import { Navbar, Nav, Form, Button } from 'react-bootstrap';
 import './Header.css';
 
 const Header = (props) => {
-    const count = props.data.length;
-    let sum=0;
-    props.data.map( each => sum+= each.price);
+
 
     const review = () => {
         
@@ -28,9 +25,7 @@ const Header = (props) => {
                 </Nav>
                 
                 <Form inline>
-                    <div>
-                        <FontAwesomeIcon icon={faShoppingCart} /> <span>{count}</span><b> ${sum}</b>
-                    </div>
+                    
                     <div>
                        
                             <Button onClick={review} className="btn bg-primary">Select Again </Button>
