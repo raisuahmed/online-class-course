@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './images/logo.jpg';
 import './App.css';
 import myData from './Fakedata/myData.json';
 import 'bootstrap/dist/css/bootstrap.min.css';

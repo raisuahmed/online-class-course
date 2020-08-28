@@ -1,11 +1,11 @@
 import React from 'react';
-import Enrolled from '../Enrolled/Enrolled'
+import Enrolled from '../Enrolled/Enrolled';
 import './Cart.css'
 const Cart = (props) => {
     const data = props.data;
   
     let sum=0;
-    data.map(each => {
+    data.map(each=> {
         sum+=each.price
         
     });
