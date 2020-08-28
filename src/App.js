@@ -6,20 +6,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Course from './components/Course/Course';
 import Header from './components/Header/Header';
 import { useState } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Cart from './components/Cart/Cart';
 import Footer from './components/Footer/Footer';
 
 function App() {
   const data = [...myData];
-  console.log("first", typeof (data))
+ 
   const [item, setItem] = useState(data);
   const [cart, setCart] = useState([]);
 
   const clickHandle = (props) => {
     const newCart = [props.every, ...cart];
     setCart(newCart);
-    console.log("cartlist", typeof (cart));
+    
   }
   return (
     <div className="">

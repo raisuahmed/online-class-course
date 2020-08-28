@@ -33,7 +33,7 @@ const Course = (props) => {
                                             <br/>
                                             
                                             <b>By : {every.by}</b>
-                                            <h5>${every.price}</h5>
+                                            <h3> <span style ={{color:'blue'}}>${every.price}</span></h3>
                                              <span>{every.students}k students</span>
                                             <br></br>
                                             <Button className="button" onClick={() => props.clickHandle({ every })} > Enrol Now </Button>

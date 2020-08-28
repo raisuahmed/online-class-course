@@ -1,5 +1,5 @@
 .shop-container{
-    overflow: auto;
+   
     height: 250px;
     padding: 10px 10px;
  
@@ -9,10 +9,11 @@
     margin: 10px 5px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(34, 28, 28);
-    background-color: rgb(75, 163, 12);
+    background-color: rgb(136, 247, 57);
     padding: 10px 0px;
     font-size: 14px;
     text-align: right;
+    width: 360px;
     
     
 }

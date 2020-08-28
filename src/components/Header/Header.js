@@ -26,6 +26,7 @@ const Header = (props) => {
                     <Nav.Link href="#Courses" style={{color:'white', fontSize:'20px'}}>Courses</Nav.Link>
                     <Nav.Link href="#Blog" style={{color:'white',fontSize:'20px'}}>Blog</Nav.Link>
                 </Nav>
+                
                 <Form inline>
                     <div>
                         <FontAwesomeIcon icon={faShoppingCart} /> <span>{count}</span><b> ${sum}</b>
@@ -35,8 +36,10 @@ const Header = (props) => {
                             <Button onClick={review} className="btn bg-primary">Select Again </Button>
                         </div>
                 </Form>
+                
             </Navbar.Collapse>
         </Navbar>
+     
     </div>
     
     );

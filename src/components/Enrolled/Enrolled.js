@@ -1,32 +1,33 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {faShoppingCart   } from '@fortawesome/free-solid-svg-icons';
 import './shop.css'
 const Shop = (props) => {
     const items = props.data;
-    console.log("enrol", typeof(items));
+    
     
     return (
         <div className="shop-container">
             <Container fluid>
                 {/* selected item list  */}
                 {
-                    items.map( every => 
+                    items.map( each => 
                         <Row className="enrol-item">
                             <Col sm={3} >
                                 <div>
-                                    <Image src={every.image} height={50} width={50}></Image>
+                                    <Image src={each.image} height={70} width={70}></Image>
                                 </div>
                             </Col>
                             <Col sm={6}>
                                 <div>
-                                <b>{every.name}</b> <br/>
+                                <b>{each.name}</b> <br/>
                                
                                 </div>
                             </Col>
                             <Col sm={3}>
                                 <div>
-                                    <h5>${every.price}</h5>
+                                    <h5>${each.price}</h5>
                                 </div>
                             </Col>
                         </Row>

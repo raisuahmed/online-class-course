@@ -21,9 +21,11 @@
     border: none;
     margin-top: 20px;
 }
+
 .style{
     color: rgb(141, 224, 8);
 }
+
 .button:hover{
     color: white;
     border:none;
