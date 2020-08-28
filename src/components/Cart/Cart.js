@@ -5,7 +5,7 @@ const Cart = (props) => {
     const data = props.data;
   
     let sum=0;
-    data.map(each=>{
+    data.map(each => {
         sum+=each.price
         
     });

@@ -5,7 +5,7 @@
     margin-right: 30px;
 }
 
-.select:hover{
+Button:hover{
     background-color: purple;
     border-radius:17px
 }
@@ -13,4 +13,10 @@
     color:wheat;
     
     
+}
+span{
+    margin-right: 20px;
+}
+b{
+    margin-right: 20px;
 }

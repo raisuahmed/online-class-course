@@ -1,24 +1,28 @@
 
-.items{
-    width: 240px;
-    margin: 20px 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px gray;
-    background-color: rgb(95, 78, 170);
-    padding: 10px 10px;
-    overflow: auto;
-}
-.items img{
+
+.item img{
     border-radius: 50%;
     margin-top: 20px;
 }
-.items img h5{
+.item img h5{
     font-size: 18px;
 }
+.item{
+    width: 240px;
+    margin: 20px 20px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px gray;
+    background-color: rgb(141, 135, 172);
+    padding: 10px 10px;
+    overflow: auto;
+}
 .button{
-    background-color: orange;
+    background-color: rgb(4, 199, 46);
     border: none;
     margin-top: 20px;
+}
+.style{
+    color: rgb(141, 224, 8);
 }
 .button:hover{
     color: white;

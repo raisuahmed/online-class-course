@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Image, Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faShoppingCart   } from '@fortawesome/free-solid-svg-icons';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+
 import './shop.css'
 const Shop = (props) => {
     const items = props.data;
@@ -10,13 +9,13 @@ const Shop = (props) => {
     return (
         <div className="shop-container">
             <Container fluid>
-                {/* enrolled item list small view in cart */}
+                {/* selected item list  */}
                 {
                     items.map( every => 
-                        <Row className="enrolled-items">
+                        <Row className="enrol-item">
                             <Col sm={3} >
                                 <div>
-                                    <Image src={every.image} height={40} width={40}></Image>
+                                    <Image src={every.image} height={50} width={50}></Image>
                                 </div>
                             </Col>
                             <Col sm={6}>

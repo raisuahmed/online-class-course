@@ -2,33 +2,33 @@ import React from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import './Course.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faShoppingCart, faStar,  faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
+import { faStar,  faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Course = (props) => {
-    //console.log("course", typeof (props.data))
+    
     return (
         <div>
             <Container>
                 <div className="course-list">
                     <Row>
-                        {/* course card items */}
+                        {/* course  items */}
                         {
                             props.data.map(every =>
-                                <div className="items">
+                                <div className="item">
                                     <Col md={2}>
                                         <div>
                                             <Image src={every.image} height={70} width={70}></Image>
                                         </div>
                                     </Col>
-                                    <Col md={10} >
+                                    <Col md={12} >
                                         <div>
                                             <h5>{every.name}</h5>
                                             
-                                            <FontAwesomeIcon icon={ faStar} style={{color:'orange'}} />
-                                    <FontAwesomeIcon icon={faStar} style={{color:'orange'}}/>
-                                            <FontAwesomeIcon icon={faStar} style={{color:'orange'}}/>
+                                            <FontAwesomeIcon className  = 'style' icon={ faStar} />
+                                             <FontAwesomeIcon className  = 'style' icon={faStar} />
+                                            <FontAwesomeIcon className  = 'style' icon={faStar} />
                                             
-                                            <FontAwesomeIcon icon={faStarHalfAlt} style={{color:'orange'}}/>
+                                            <FontAwesomeIcon className  = 'style' icon={faStarHalfAlt}/>
                                             <span> {every.rating} </span> 
                                             <br/>
                                             

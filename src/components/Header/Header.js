@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { Navbar, Nav, Form,  Button, } from 'react-bootstrap';
+import { Navbar, Nav, Form, Button } from 'react-bootstrap';
 import './Header.css';
 
 const Header = (props) => {
@@ -9,6 +9,10 @@ const Header = (props) => {
     let sum=0;
     props.data.map( each => sum+= each.price);
 
+    const review = () => {
+        
+        window.location.reload();
+    } 
     
     return (            
             
@@ -24,9 +28,12 @@ const Header = (props) => {
                 </Nav>
                 <Form inline>
                     <div>
-                        <FontAwesomeIcon icon={faShoppingCart} /> <span>{count}</span><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${sum}</b>
+                        <FontAwesomeIcon icon={faShoppingCart} /> <span>{count}</span><b> ${sum}</b>
                     </div>
-                    
+                    <div>
+                       
+                            <Button onClick={review} className="btn bg-primary">Select Again </Button>
+                        </div>
                 </Form>
             </Navbar.Collapse>
         </Navbar>
